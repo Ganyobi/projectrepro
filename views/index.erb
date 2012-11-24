@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Hackathon v1 - FYP Project Repository</title>
+	</head>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<body>
+		<div class="span4">
+			<h3>Project Listing</h3>
+			<ul>
+				<% for project in @projects %>
+				<%= "<li>#{project.title} <br><span>By: #{project.author} </span></li>" %>
+				<% end %>
+			</ul>
+
+			<a href="newpost">New Post</a>
+		</div>
+		<%= @url %>
+		<div class="span6">
+
+		</div>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>
